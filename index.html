@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="calc-container">
+        <input type="text" id="calc">
+        <div class="nums">
+            <div class="row-one">
+                <span class="num" onclick="clearInput()">C</span>
+                <span class="num" onclick="Calculator('/')">/</span>
+                <span class="num" onclick="Delete()">←</span>
+            </div>
+            <div class="row">
+                <span class="num" onclick="putNum(7)">7</span>
+                <span class="num" onclick="putNum(8)">8</span>
+                <span class="num" onclick="putNum(9)">9</span>
+                <span class="num" onclick="Calculator('*')">*</span>
+            </div>
+            <div class="row">
+                <span class="num" onclick="putNum(4)">4</span>
+                <span class="num" onclick="putNum(5)">5</span>
+                <span class="num" onclick="putNum(6)">6</span>
+                <span class="num" onclick="Calculator('-')">-</span>
+            </div>
+            <div class="row">
+                <span class="num" onclick="putNum(1)">1</span>
+                <span class="num" onclick="putNum(2)">2</span>
+                <span class="num" onclick="putNum(3)">3</span>
+                <span class="num" onclick="Calculator('+')">+</span>
+            </div>
+            <div class="row">
+                <span class="num" onclick="Calculator('%')">%</span>
+                <span class="num" onclick="putNum(0)">0</span>
+                <span class="num" onclick="putDot('.')">.</span>
+                <span class="num" onclick="Result()">=</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
