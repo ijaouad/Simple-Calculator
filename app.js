@@ -4,7 +4,7 @@ var result;
 function Calculator(o){
     result = parseFloat(document.getElementById('calc').value);
     operation = o;
-    document.getElementById('calc').value = "";
+    document.getElementById('calc').value = '';
 }
 
 function Result(){
@@ -39,7 +39,7 @@ function putNum(a) {
 }
 
 function clearInput() {
-    document.getElementById('calc').value = "";
+    document.getElementById('calc').value = '';
 }
 
 function putDot(d) {
